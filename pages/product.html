@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | ShopSphere</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/70a642cd7c.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/navbar.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/product.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/footer.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/toast.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/theme.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+
+<section class="product-details py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+                <img id="product-image"
+                     src=""
+                     class="img-fluid product-image"
+                     alt="Product">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h1 id="product-name"
+                    class="mb-3">
+
+                    Loading...
+
+                </h1>
+
+                <div class="mb-3 text-warning">
+
+                    <span id="product-rating"></span>
+
+                    <span id="product-review"
+                          class="text-dark ms-2">
+
+                    </span>
+
+                </div>
+
+                <h2 id="product-price"
+                    class="text-primary mb-4">
+
+                </h2>
+
+                <p id="product-description"
+                   class="text-muted mb-4">
+
+                </p>
+
+                <div class="mb-4">
+
+                    <strong>Brand:</strong>
+
+                    <span id="product-brand"></span>
+
+                </div>
+
+                <div class="d-flex align-items-center mb-4">
+
+                    <label class="me-3 fw-bold">
+
+                        Quantity
+
+                    </label>
+
+                    <div class="quantity-box d-flex">
+
+                        <button id="minus-btn"
+                                class="btn btn-outline-secondary">
+
+                            -
+
+                        </button>
+
+                        <input
+                            id="quantity"
+                            type="number"
+                            value="1"
+                            min="1"
+                            class="form-control text-center">
+
+                        <button id="plus-btn"
+                                class="btn btn-outline-secondary">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex gap-3">
+
+                    <button id="add-cart-btn"
+                            class="btn btn-primary">
+
+                        <i class="fas fa-shopping-cart me-2"></i>
+
+                        Add to Cart
+
+                    </button>
+
+                    <button class="btn btn-dark">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="pb-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <h3 class="mb-3">
+
+                    Product Description
+
+                </h3>
+
+                <p id="full-description"
+                   class="text-muted">
+
+                </p>
+
+                <h4 class="mt-5 mb-3">
+
+                    Specifications
+
+                </h4>
+
+                <table class="table table-bordered">
+
+                    <tbody>
+                                                <tr>
+
+                            <th>
+
+                                Brand
+
+                            </th>
+
+                            <td id="spec-brand"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Category
+
+                            </th>
+
+                            <td id="spec-category"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Rating
+
+                            </th>
+
+                            <td id="spec-rating"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Reviews
+
+                            </th>
+
+                            <td id="spec-reviews"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Availability
+
+                            </th>
+
+                            <td>
+
+                                In Stock
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="related-products py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+
+            Related Products
+
+        </h2>
+
+        <div id="related-products"
+             class="row g-4">
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="toast-container"></div>
+
+<div id="footer-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/product.js"></script>
+
+<script src="../assets/js/product-details.js"></script>
+
+<script src="../assets/js/components.js"></script>
+
+<script src="../assets/js/auth.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+
+</body>
+
+</html>

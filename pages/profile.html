@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | ShopSphere</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/70a642cd7c.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/navbar.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/footer.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/toast.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/theme.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/auth.css">
+
+</head>
+
+<body class="bg-light">
+
+<div id="toast-container"></div>
+
+<div id="navbar-container"></div>
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card border-0 shadow-lg rounded-4">
+
+                    <div class="card-body p-5">
+
+                        <div class="text-center mb-5">
+
+                            <div class="mb-3">
+
+                                <i class="fas fa-user-circle text-primary"
+                                   style="font-size:90px;"></i>
+
+                            </div>
+
+                            <h2 class="fw-bold">
+
+                                My Profile
+
+                            </h2>
+
+                            <p class="text-muted">
+
+                                Manage your ShopSphere account
+
+                            </p>
+
+                        </div>
+                                                <div class="row g-4">
+
+                            <div class="col-md-6">
+
+                                <label class="form-label fw-semibold">
+
+                                    Full Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profile-name"
+                                    class="form-control"
+                                    readonly>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label class="form-label fw-semibold">
+
+                                    Username
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profile-username"
+                                    class="form-control"
+                                    readonly>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label class="form-label fw-semibold">
+
+                                    Email
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profile-email"
+                                    class="form-control"
+                                    readonly>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label class="form-label fw-semibold">
+
+                                    Phone
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profile-phone"
+                                    class="form-control"
+                                    readonly>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="text-center">
+
+                            <button
+                                id="logout-profile-btn"
+                                class="btn btn-danger px-5 py-3">
+
+                                <i class="fas fa-sign-out-alt me-2"></i>
+
+                                Logout
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="footer-container"></div>
+
+<div id="toast-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/components.js"></script>
+
+<script src="../assets/js/toast.js"></script>
+
+<script src="../assets/js/auth.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const user =
+        JSON.parse(
+            localStorage.getItem("currentUser")
+        );
+
+    if (!user) {
+
+        window.location.href =
+            "login.html";
+
+        return;
+
+    }
+
+    document.getElementById("profile-name").value =
+        user.full_name || "";
+
+    document.getElementById("profile-username").value =
+        user.username || "";
+
+    document.getElementById("profile-email").value =
+        user.email || "";
+
+    document.getElementById("profile-phone").value =
+        user.phone || "";
+
+    document
+        .getElementById("logout-profile-btn")
+        .addEventListener("click", function () {
+
+            logout();
+
+        });
+
+});
+
+</script>
+
+</body>
+
+</html>

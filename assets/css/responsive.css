@@ -1,0 +1,621 @@
+/* ==========================
+   HERO SECTION
+========================== */
+
+@media (max-width:1400px){
+
+    .hero-title{
+
+        font-size:3.6rem;
+
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .hero-v2{
+
+        padding:90px 0;
+
+    }
+
+    .hero-title{
+
+        font-size:3.2rem;
+
+    }
+
+    .hero-text{
+
+        font-size:17px;
+
+    }
+
+    .hero-image{
+
+        max-width:480px;
+
+    }
+
+    .hero-circle-1{
+
+        width:360px;
+
+        height:360px;
+
+    }
+
+    .hero-circle-2{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    .hero-circle-3{
+
+        width:450px;
+
+        height:450px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .hero-v2{
+
+        text-align:center;
+
+        padding:80px 0;
+
+    }
+
+    .hero-text{
+
+        margin:0 auto 35px;
+
+        max-width:650px;
+
+    }
+
+    .hero-btn-group{
+
+        justify-content:center;
+
+    }
+
+    .hero-counter{
+
+        justify-content:center;
+
+        margin-bottom:20px;
+
+    }
+
+    .hero-image-wrapper{
+
+        margin-top:60px;
+
+        min-height:420px;
+
+    }
+
+    .hero-image{
+
+        max-width:430px;
+
+    }
+
+    .hero-circle-1{
+
+        width:320px;
+
+        height:320px;
+
+    }
+
+    .hero-circle-2{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+    .hero-circle-3{
+
+        width:400px;
+
+        height:400px;
+
+    }
+
+}
+/* ==========================
+   CATEGORY SECTION
+========================== */
+
+@media (max-width:992px){
+
+    .featured-category-section{
+
+        padding:80px 0;
+
+    }
+
+    .section-header{
+
+        margin-bottom:50px;
+
+    }
+
+    .section-header h2{
+
+        font-size:36px;
+
+    }
+
+    .category-card{
+
+        padding:35px 22px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-category-section{
+
+        padding:70px 0;
+
+    }
+
+    .section-header h2{
+
+        font-size:30px;
+
+    }
+
+    .section-header p{
+
+        font-size:16px;
+
+    }
+
+    .category-icon{
+
+        width:80px;
+
+        height:80px;
+
+    }
+
+    .category-icon i{
+
+        font-size:34px;
+
+    }
+
+    .category-card h4{
+
+        font-size:22px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .section-header{
+
+        margin-bottom:40px;
+
+    }
+
+    .section-header span{
+
+        font-size:13px;
+
+    }
+
+    .section-header h2{
+
+        font-size:26px;
+
+    }
+
+    .category-card{
+
+        padding:30px 20px;
+
+    }
+
+    .category-icon{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+    .category-icon i{
+
+        font-size:30px;
+
+    }
+
+}
+/* ==========================
+   FEATURED PRODUCTS
+========================== */
+
+@media (max-width:1200px){
+
+    .featured-products-section{
+
+        padding:90px 0;
+
+    }
+
+    .featured-product-card img{
+
+        height:240px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .featured-products-section{
+
+        padding:80px 0;
+
+    }
+
+    .featured-product-card{
+
+        border-radius:24px;
+
+    }
+
+    .featured-product-content{
+
+        padding:24px;
+
+    }
+
+    .featured-product-content h5{
+
+        font-size:20px;
+
+    }
+
+    .price{
+
+        font-size:22px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-product-card img{
+
+        height:220px;
+
+    }
+
+    .featured-product-content{
+
+        padding:22px;
+
+    }
+
+    .featured-product-content h5{
+
+        font-size:19px;
+
+    }
+
+    .price{
+
+        font-size:20px;
+
+    }
+
+    .old-price{
+
+        font-size:15px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .featured-products-section{
+
+        padding:70px 0;
+
+    }
+
+    .featured-product-card{
+
+        border-radius:20px;
+
+    }
+
+    .featured-product-card img{
+
+        height:200px;
+
+        padding:20px;
+
+    }
+
+    .featured-product-content{
+
+        padding:20px;
+
+    }
+
+    .featured-product-content .btn{
+
+        padding:13px;
+
+        font-size:15px;
+
+    }
+
+}
+/* ==========================
+   OFFER SECTION
+========================== */
+
+@media (max-width:1200px){
+
+    .offer-section h2{
+
+        font-size:42px;
+
+    }
+
+    .offer-section img{
+
+        max-width:380px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .offer-section{
+
+        padding:90px 0;
+
+        text-align:center;
+
+    }
+
+    .offer-section p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    .offer-section .btn{
+
+        margin-bottom:20px;
+
+    }
+
+    .offer-section img{
+
+        margin-top:40px;
+
+        max-width:340px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .offer-section{
+
+        padding:70px 0;
+
+    }
+
+    .offer-tag{
+
+        font-size:13px;
+
+        padding:8px 18px;
+
+    }
+
+    .offer-section h2{
+
+        font-size:34px;
+
+    }
+
+    .offer-section p{
+
+        font-size:16px;
+
+    }
+
+    .offer-section img{
+
+        max-width:300px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .offer-section h2{
+
+        font-size:28px;
+
+        line-height:1.35;
+
+    }
+
+    .offer-section p{
+
+        font-size:15px;
+
+    }
+
+    .offer-section .btn{
+
+        width:100%;
+
+    }
+
+    .offer-section img{
+
+        max-width:260px;
+
+    }
+
+}
+/* ==========================
+   NEWSLETTER
+========================== */
+
+@media (max-width:1200px){
+
+    .newsletter-box{
+
+        padding:60px 50px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .newsletter-section{
+
+        padding:90px 0;
+
+    }
+
+    .newsletter-box{
+
+        padding:55px 40px;
+
+    }
+
+    .newsletter-box h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .newsletter-section{
+
+        padding:70px 0;
+
+    }
+
+    .newsletter-box{
+
+        padding:40px 25px;
+
+        border-radius:24px;
+
+    }
+
+    .newsletter-box h2{
+
+        font-size:30px;
+
+    }
+
+    .newsletter-box p{
+
+        font-size:16px;
+
+    }
+
+    .newsletter-form{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .newsletter-form input{
+
+        width:100%;
+
+        height:58px;
+
+    }
+
+    .newsletter-form button{
+
+        width:100%;
+
+        height:58px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .newsletter-box{
+
+        padding:35px 20px;
+
+    }
+
+    .newsletter-box h2{
+
+        font-size:26px;
+
+    }
+
+    .newsletter-box p{
+
+        font-size:15px;
+
+    }
+
+    .newsletter-form input{
+
+        padding:0 22px;
+
+        font-size:15px;
+
+    }
+
+    .newsletter-form button{
+
+        font-size:15px;
+
+    }
+
+}

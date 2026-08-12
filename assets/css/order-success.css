@@ -1,0 +1,226 @@
+.success-section{
+
+    min-height:80vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:80px 20px;
+
+}
+
+.success-card{
+
+    max-width:700px;
+
+    width:100%;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    border-radius:24px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.success-icon{
+
+    width:120px;
+
+    height:120px;
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
+
+    background:#198754;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.success-icon i{
+
+    font-size:60px;
+
+    color:#ffffff;
+
+}
+
+.success-card h1{
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:var(--text);
+
+}
+
+.success-card p{
+
+    color:var(--text-muted);
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.success-card .card{
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.success-card .card span,
+
+.success-card .card strong{
+
+    color:var(--text);
+
+}
+
+.success-card .text-primary{
+
+    color:var(--primary)!important;
+
+}
+
+.success-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.success-buttons .btn{
+
+    min-width:220px;
+
+    padding:14px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.success-buttons .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:768px){
+
+    .success-card{
+
+        padding:40px 25px;
+
+    }
+
+    .success-icon{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    .success-icon i{
+
+        font-size:45px;
+
+    }
+
+    .success-card h1{
+
+        font-size:28px;
+
+    }
+
+}
+.success-section{
+
+    background: var(--bg);
+
+}
+
+.success-card{
+
+    background: var(--surface);
+
+    color: var(--text);
+
+}
+
+.success-card h1,
+
+.success-card h2,
+
+.success-card h3,
+
+.success-card h4,
+
+.success-card h5,
+
+.success-card h6{
+
+    color: var(--text);
+
+}
+
+.success-card p,
+
+.success-card span,
+
+.success-card small{
+
+    color: var(--text-muted);
+
+}
+
+.success-card .card{
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+}
+
+.success-card .card *{
+
+    color: inherit;
+
+}

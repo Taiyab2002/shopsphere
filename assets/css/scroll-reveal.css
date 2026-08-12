@@ -1,0 +1,225 @@
+/* ==========================================================
+   SCROLL REVEAL SYSTEM
+========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+    will-change:
+
+        opacity,
+
+        transform;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* -----------------------------
+   Directions
+----------------------------- */
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(80px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-scale{
+
+    opacity:0;
+
+    transform:scale(.85);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal-scale.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+/* ==========================================================
+   STAGGER ANIMATION
+========================================================== */
+
+.delay-1{
+
+    transition-delay:.10s;
+
+}
+
+.delay-2{
+
+    transition-delay:.20s;
+
+}
+
+.delay-3{
+
+    transition-delay:.30s;
+
+}
+
+.delay-4{
+
+    transition-delay:.40s;
+
+}
+
+.delay-5{
+
+    transition-delay:.50s;
+
+}
+
+.delay-6{
+
+    transition-delay:.60s;
+
+}
+
+.delay-7{
+
+    transition-delay:.70s;
+
+}
+
+.delay-8{
+
+    transition-delay:.80s;
+
+}
+
+/* -----------------------------
+   Faster Mobile Animation
+----------------------------- */
+
+@media(max-width:768px){
+
+    .delay-1,
+    .delay-2,
+    .delay-3,
+    .delay-4,
+    .delay-5,
+    .delay-6,
+    .delay-7,
+    .delay-8{
+
+        transition-delay:0s;
+
+    }
+
+}
+/* ==========================================================
+   PREMIUM REVEAL POLISH
+========================================================== */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale{
+
+    transition:
+
+        opacity .9s cubic-bezier(.22,.61,.36,1),
+
+        transform .9s cubic-bezier(.22,.61,.36,1);
+
+}
+
+/* ---------- Hover While Visible ---------- */
+
+.reveal.active:hover{
+
+    transform:
+
+        translateY(-8px);
+
+}
+
+.reveal-scale.active:hover{
+
+    transform:
+
+        scale(1.03);
+
+}
+
+.reveal-left.active:hover{
+
+    transform:
+
+        translateX(0)
+        translateY(-8px);
+
+}
+
+.reveal-right.active:hover{
+
+    transform:
+
+        translateX(0)
+        translateY(-8px);
+
+}
