@@ -157,10 +157,9 @@ The project combines a responsive front-end interface with PHP-based backend fun
 
 This project was developed by:
 
-Developers	         Department
-__________           ______________________________
-Taiyab Ur Rahman	 Computer Science & Engineering
-Tusar Ray	         Computer Science & Engineering
+
+* Taiyab Ur Rahman	 
+* Tusar Ray
 
 
 ---
