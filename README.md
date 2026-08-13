@@ -1,114 +1,162 @@
-#  ShopSphere – Modern E-Commerce Website
+# ShopSphere – Modern E-Commerce Website
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)
 
-A modern responsive e-commerce website built using **HTML, CSS, Bootstrap 5, and Vanilla JavaScript**.
+A modern and responsive e-commerce website built using **HTML5, CSS3, Bootstrap 5, Vanilla JavaScript, and PHP**.
 
-This project was developed as part of a **Web Programming course** and demonstrates a complete front-end shopping experience with product browsing, wishlist, shopping cart, checkout, and order processing.
-
----
-
-##  Live Demo
-
-🔗 https://shopsphere-taiyab-tusar.netlify.app/
+ShopSphere was developed as a university **Web Programming Course project**. The project demonstrates a complete e-commerce shopping experience including product browsing, product details, wishlist management, shopping cart, user authentication, checkout, order processing, order history, and order cancellation.
 
 ---
 
-##  Preview
+## Live Demo
 
-> Homepage
+ **Live Website:**  
+https://shopspherebd.rf.gd
 
-> Shop Page
-
-> Product Details
-
-> Shopping Cart
-
-> Checkout
-
-> Order Success
-
-*(Screenshots will be added soon.)*
+💻 **GitHub Repository:**  
+https://github.com/Taiyab2002/shopsphere
 
 ---
 
-#  Features
+## Project Overview
 
-###  Home Page
+ShopSphere is designed as a modern online shopping platform where users can browse products, view product details, add products to their wishlist or shopping cart, complete checkout, and manage their orders.
+
+The project combines a responsive front-end interface with PHP-based backend functionality and browser-based data storage to provide an interactive shopping experience.
+
+---
+
+## Features
+
+### Home Page
 
 - Modern responsive homepage
-- Hero section
+- Interactive hero section
 - Featured products
-- Categories section
-- Newsletter section
+- Brand section
+- Promotional section
+- Responsive navigation bar
+- Light, Dark, and System theme options
 
-###  Shop
+### Shop
 
 - Product listing
-- Search products
-- Category filter
+- Product search
+- Category filtering
 - Price sorting
 - Responsive product cards
+- Product pagination
 
-###  Wishlist
+### Product Details
 
-- Add to wishlist
-- Remove from wishlist
-- Wishlist counter
-- Wishlist page
-
-###  Product Details
-
-- Product information
+- Detailed product information
+- Product image
+- Product price
 - Quantity selector
-- Add to cart
-- Buy Now button
+- Add to Cart
+- Buy Now
 - Related products
 
-###  Shopping Cart
+### Wishlist
 
-- Add products
-- Increase quantity
-- Decrease quantity
-- Remove item
-- Order summary
-- Live total calculation
+- Add products to wishlist
+- Remove products from wishlist
+- Wishlist counter
+- Dedicated wishlist page
 
-###  Checkout
+### Shopping Cart
 
+- Add products to cart
+- Increase product quantity
+- Decrease product quantity
+- Remove individual products
+- Clear cart
+- Dynamic cart counter
+- Automatic subtotal calculation
+- Automatic total calculation
+
+### User Authentication
+
+- User registration
+- User login
+- Logout functionality
+- User profile
+- Login-based order history
+
+### Checkout
+
+- Customer information form
 - Billing information
-- Multi Currency (USD / BDT)
+- USD and BDT currency options
 - Dynamic payment methods
 - Delivery estimation
 - Order summary
+- Order placement
 
-###  Order Success
+### Order Management
 
-- Order confirmation
+- Order confirmation page
+- Generated order ID
 - Customer information
 - Payment method
-- Order ID
-- Purchased products
+- Order total
+- My Orders page
+- Order history
+- Cancel Order functionality
+
+### User Interface
+
+- Bootstrap-based responsive design
+- Font Awesome icons
+- Toast notifications
+- Page loader
+- Scroll reveal animations
+- Magnetic button effects
+- Interactive hero animations
+- Responsive layout
 
 ---
 
-#  Technologies Used
+## Technologies Used
+
+### Frontend
 
 - HTML5
 - CSS3
 - Bootstrap 5
 - JavaScript (ES6)
 - Font Awesome
+
+### Backend
+
+- PHP
+
+### Browser Storage
+
 - LocalStorage API
+
+### Development Tools
+
+- XAMPP
+- Apache
+- Git
+- GitHub
+- Visual Studio Code
+
+### Deployment
+
+- InfinityFree
 
 ---
 
-#  Project Structure
+## Project Structure
 
-```
+```text
 ShopSphere
 │
 ├── assets
@@ -116,56 +164,41 @@ ShopSphere
 │   ├── images
 │   └── js
 │
+├── backend
+│   ├── config.php
+│   ├── login.php
+│   └── register.php
+│
 ├── components
+│   ├── footer.html
+│   ├── navbar.html
+│   └── toast.html
 │
 ├── pages
-│   ├── shop.html
-│   ├── product.html
-│   ├── wishlist.html
 │   ├── cart.html
 │   ├── checkout.html
-│   └── order-success.html
+│   ├── login.html
+│   ├── order-history.html
+│   ├── order-success.html
+│   ├── product.html
+│   ├── profile.html
+│   ├── register.html
+│   ├── shop.html
+│   └── wishlist.html
 │
 ├── index.html
-└── README.md
-```
+├── README.md
+└── .gitignore
 
----
+##Development Team
 
-#  Future Improvements
+This project was developed by:
 
-- User Authentication
-- Order History
-- Admin Dashboard
-- Product Reviews
-- Coupon System
-- Dark Mode
-- Backend Integration
-- Payment Gateway Integration
-- Database Support
+Developers	         Department
+__________           ______________________________
+Taiyab Ur Rahman	 Computer Science & Engineering
+Tusar Ray	         Computer Science & Engineering
 
----
+License: 
 
-#  Responsive Design
-
-The website is fully responsive and optimized for
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
----
-
-#  Developer
-
-**Taiyab Ur Rahman**
-**Tusar Ray**
-
-Department of Computer Science & Engineering
-
----
-
-#  License
-
-This project is created for educational and portfolio purposes.
+This project was created for educational and portfolio purposes.
