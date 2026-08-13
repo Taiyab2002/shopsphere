@@ -16,15 +16,51 @@ function getBasePath() {
 
 }
 
+function fixComponentPaths(element) {
+
+    if (!element) return;
+
+    const host = window.location.hostname;
+
+    if (host === "localhost") return;
+
+    const links =
+        element.querySelectorAll(
+            'a[href^="/shopsphere/"]'
+        );
+
+    links.forEach(link => {
+
+        const href =
+            link.getAttribute("href");
+
+        if (href) {
+
+            link.setAttribute(
+                "href",
+                href.replace(
+                    "/shopsphere/",
+                    "/"
+                )
+            );
+
+        }
+
+    });
+
+}
+
 async function loadComponent(id, file) {
 
-    const element = document.getElementById(id);
+    const element =
+        document.getElementById(id);
 
     if (!element) return;
 
     try {
 
-        const response = await fetch(file);
+        const response =
+            await fetch(file);
 
         if (!response.ok) {
 
@@ -32,7 +68,10 @@ async function loadComponent(id, file) {
 
         }
 
-        element.innerHTML = await response.text();
+        element.innerHTML =
+            await response.text();
+
+        fixComponentPaths(element);
 
         if (
             id === "navbar-container" &&
@@ -65,22 +104,31 @@ async function loadComponent(id, file) {
 function updateNavbarCounters() {
 
     const cart =
-        JSON.parse(localStorage.getItem("cart")) || [];
+        JSON.parse(
+            localStorage.getItem("cart")
+        ) || [];
 
     const wishlist =
-        JSON.parse(localStorage.getItem("wishlist")) || [];
+        JSON.parse(
+            localStorage.getItem("wishlist")
+        ) || [];
 
     const cartCount =
-        document.getElementById("cart-count");
+        document.getElementById(
+            "cart-count"
+        );
 
     const wishlistCount =
-        document.getElementById("wishlist-count");
+        document.getElementById(
+            "wishlist-count"
+        );
 
     if (cartCount) {
 
         cartCount.textContent =
             cart.reduce(
-                (sum, item) => sum + item.quantity,
+                (sum, item) =>
+                    sum + item.quantity,
                 0
             );
 
@@ -95,24 +143,31 @@ function updateNavbarCounters() {
 
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
 
-    const componentPath =
-        getBasePath() + "components/";
+        const componentPath =
+            getBasePath() +
+            "components/";
 
-    await loadComponent(
-        "navbar-container",
-        componentPath + "navbar.html"
-    );
+        await loadComponent(
+            "navbar-container",
+            componentPath +
+            "navbar.html"
+        );
 
-    await loadComponent(
-        "footer-container",
-        componentPath + "footer.html"
-    );
+        await loadComponent(
+            "footer-container",
+            componentPath +
+            "footer.html"
+        );
 
-    await loadComponent(
-        "toast-container",
-        componentPath + "toast.html"
-    );
+        await loadComponent(
+            "toast-container",
+            componentPath +
+            "toast.html"
+        );
 
-});
+    }
+);
