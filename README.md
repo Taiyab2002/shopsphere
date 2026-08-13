@@ -152,6 +152,17 @@ The project combines a responsive front-end interface with PHP-based backend fun
 
 - InfinityFree
 
+
+## Development Team
+
+This project was developed by:
+
+Developers	         Department
+__________           ______________________________
+Taiyab Ur Rahman	 Computer Science & Engineering
+Tusar Ray	         Computer Science & Engineering
+
+
 ---
 
 ## Project Structure
@@ -190,15 +201,9 @@ ShopSphere
 ├── README.md
 └── .gitignore
 
-##Development Team
 
-This project was developed by:
+---
 
-Developers	         Department
-__________           ______________________________
-Taiyab Ur Rahman	 Computer Science & Engineering
-Tusar Ray	         Computer Science & Engineering
-
-License: 
+## License: 
 
 This project was created for educational and portfolio purposes.
